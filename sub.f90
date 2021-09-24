@@ -7,6 +7,6 @@ subroutine sub_routine(a, array_size)
   integer :: i
 
   do i = 1, array_size
-    array(i) = a(i)
+    a(i) = array(i)
   end do
 end subroutine
