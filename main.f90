@@ -15,10 +15,6 @@ program main
 
   allocate(a(n))
 
-  do i = 1, n
-  a(i) = i * 1d0
-  enddo
-
   !$acc kernels copy(a(1:n)), copyin(array_size)
   do i = 1, n
   call sub_routine(a, array_size)
