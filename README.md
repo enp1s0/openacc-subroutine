@@ -1,0 +1,3 @@
+# Fortran/OpenACCのsubroutineに関する挙動調査
+
+OpenACCのループ内でsubroutine呼び出しをし、その中で可変サイズ配列を用いるとどこに領域が取られるのかを調べる。
